@@ -1,52 +1,42 @@
 # take-note
-# Unit 11 Express Homework: Note Taker
+
+![READle-ME-this](https://img.shields.io/github/last-commit/AlexShafer/take-note)
 
 ## Description
 
-Create an application that can be used to write, save, and delete notes. This application will use an express backend and save and retrieve note data from a JSON file.
+take-note is a simple note taking application utilizing javascript and express to take, store, return adn delete use submited notes.
 
-* The application frontend has already been created, it's your job to build the backend and connect the two.
+## Screen Shot
 
-* The following HTML routes should be created:
+## Table of Contents
 
-  * GET `/notes` - Should return the `notes.html` file.
+* [Installation](#installation)
 
-  * GET `*` - Should return the `index.html` file
+* [Usage](#usage)
 
-* The application should have a `db.json` file on the backend that will be used to store and retrieve notes using the `fs` module.
+* [Credits](#credits)
 
-* The following API routes should be created:
+* [License](#license)
 
-  * GET `/api/notes` - Should read the `db.json` file and return all saved notes as JSON.
+## Installation
 
-  * POST `/api/notes` - Should receive a new note to save on the request body, add it to the `db.json` file, and then return the new note to the client.
+npm i
 
-  * DELETE `/api/notes/:id` - Should receive a query parameter containing the id of a note to delete. This means you'll need to find a way to give each note a unique `id` when it's saved. In order to delete a note, you'll need to read all notes from the `db.json` file, remove the note with the given `id` property, and then rewrite the notes to the `db.json` file.
+## Usage
 
-## User Story
+There are no special requirements for using this repo
 
-AS A user, I want to be able to write and save notes
+## Credits
 
-I WANT to be able to delete notes I've written before
+Alex Shafer
 
-SO THAT I can organize my thoughts and keep track of tasks I need to complete
+## License
 
-## Business Context
+MIT
 
-For users that need to keep track of a lot of information, it's easy to forget or be unable to recall something important. Being able to take persistent notes allows users to have written information available when needed.
+## Tests
 
-## Acceptance Criteria
+undefined
 
-Application should allow users to create and save notes.
-
-Application should allow users to view previously saved notes.
-
-Application should allow users to delete previously saved notes.
-
-## Deploying the App
-
-You will not be able to deploy your server side code on GitHub pages. This app should be deployed on Heroku. Carefully follow the [Heroku Guide](../04-Supplemental/HerokuGuide.md) for getting your app deployed on Heroku.
-
-
-
+## Questions
 
