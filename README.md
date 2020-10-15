@@ -8,6 +8,10 @@ take-note is a simple note taking application utilizing javascript and express t
 
 ## Screen Shot
 
+## Deployment
+
+https://enigmatic-dusk-50963.herokuapp.com/
+
 ## Table of Contents
 
 * [Installation](#installation)
