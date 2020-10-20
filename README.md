@@ -4,7 +4,7 @@
 
 ## Description
 
-take-note is a simple note taking application utilizing javascript and express to take, store, return adn delete use submited notes.
+take-note is a simple note taking application utilizing javascript and express to take, store, return and delete use submited notes.
 
 ## Demo
 
@@ -42,7 +42,7 @@ MIT
 
 ## Tests
 
-undefined
+no test currently implimented
 
 ## Questions
 
