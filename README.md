@@ -6,7 +6,9 @@
 
 take-note is a simple note taking application utilizing javascript and express to take, store, return adn delete use submited notes.
 
-## Screen Shot
+## Demo
+
+![Demo](/public/assets/img/demo.gif)
 
 ## Deployment
 

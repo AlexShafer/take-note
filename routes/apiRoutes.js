@@ -1,31 +1,23 @@
-
-let savedNotes = require("../db/db.json");
-const fs = require("fs");
+const savedNotes = require("../db/db.json");
 
 module.exports = function(app) {
   app.get("/api/notes", function(req, res) {
+    savedNotes.forEach((note, index) => {
+      note.id = index +1
+    }); 
     res.json(savedNotes);
   });
 
   app.post("/api/notes", function(req, res) {
-    storedNotes.push(req.body);
-    res.json(savedNotes);
+    savedNotes.push(req.body);
+    savedNotes[savedNotes.length -1].id = savedNotes.length
+    res.send(savedNotes);
   });
   
   app.delete("/api/notes/:id", function(req, res) {
     const noteId = req.params.id;
 
-    //Function to filter notes
-    const filterById = (note) => {
-      if(note.id !== noteId) {
-        return true
-      }
-      return false;
-    }
-
-    //Invoke the filterById function to filter notes in the storedNotes array
-    storedNotes = savedNotes.filter(filterById);
-
-    res.json(savedNotes);
+    savedNotes.splice(noteId-1,1);
+    res.send(savedNotes);
   });   
 }
